@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Footwear Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <h1 class="logo">StepUp</h1>
+    <div class="top-right">
+      <input type="text" placeholder="Search..." class="search-box" />
+      <div class="cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-total">₹0</span>
+      </div>
+      <div class="profile-container" onclick="showProfileName()">
+        <img src="icon.jpg" alt="Profile" class="profile-pic" />
+        <p id="profile-name">👤 Hello, Customer!</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Kids</a></li>
+        <li><a href="#">Sports</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="sneakers.jpg" alt="Sneakers">
+          <h3>Classic Sneakers</h3>
+          <p>₹1499</p>
+          <button onclick="addToCart(1499)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="sandals.jpg" alt="Sandals">
+          <h3>Comfy Sandals</h3>
+          <p>₹999</p>
+          <button onclick="addToCart(999)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="kids.jpg" alt="kids shoes">
+          <h3>kids Shoes</h3>
+          <p>₹699</p>
+          <button onclick="addToCart(999)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="heels.jpeg" alt="Heels">
+          <h3>Heels</h3>
+          <p>₹2999</p>
+          <button onclick="addToCart(999)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="sport shoes.jpg" alt="Running Shoes">
+          <h3>Running Shoes</h3>
+          <p>₹2199</p>
+          <button onclick="addToCart(2199)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="leather loafers.jpg" alt="Loafers">
+          <h3>Leather Loafers</h3>
+          <p>₹1899</p>
+          <button onclick="addToCart(1899)">Add to Cart</button>
+        </div>
+      </div>
+
+      <button onclick="showOffer()">Click for Today's Offer</button>
+      <p id="offer-message"></p>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 StepUp Footwear. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
